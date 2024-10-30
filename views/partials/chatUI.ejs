@@ -1,0 +1,37 @@
+<!-- DIRECT CHAT -->
+<div class="card direct-chat direct-chat-primary">
+<div class="card-header">
+
+  <div class="card-tools">
+    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+      <i class="fas fa-minus"></i>
+    </button>
+  </div>
+</div>
+<!-- /.card-header -->
+<div class="card-body">
+  <!-- Conversations are loaded here -->
+  <div class="direct-chat-messages" id="directMessage">
+    <!-- Message. Default to the left -->
+    <!-- /.direct-chat-msg -->
+    <!-- Message to the right -->
+    
+  <!--/.direct-chat-messages-->
+  <!-- /.direct-chat-pane -->
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+  <form id="chatForm">
+    <div class="input-group">
+      <input type="text" name="message" id="messageField" placeholder="Type Message ..." class="form-control">
+      <input type="text" id="userId2" value="<%= recieverID  %>" hidden>
+      <input type="text" id="curentUserId" value="<%= userId  %>" hidden>
+      <span class="input-group-append">
+        <button type="submit" class="btn btn-primary">Send</button>
+      </span>
+    </div>
+  </form>
+</div>
+<!-- /.card-footer-->
+</div>
+<!--/.direct-chat -->
